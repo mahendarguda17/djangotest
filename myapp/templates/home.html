@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to the Product Store!</h1>
+    
+    <h2>Product List</h2>
+    <ul>
+        {% for product in products %}
+            <li>
+                <strong>{{ product.name }}</strong><br>
+                {{ product.description }}<br>
+                Price: ${{ product.price }}<br>
+                <hr>
+            </li>
+        {% empty %}
+            <li>No products available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
