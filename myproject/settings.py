@@ -76,22 +76,22 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',  # MySQL backend
-#         'NAME': 'testing01',  # Your database name
-#         'USER': 'root',       # Your Cloud SQL username
-#         'PASSWORD': 'mahi@123',  # Your Cloud SQL password
-#         'HOST': '/cloudsql_sockets/qwiklabs-gcp-04-1feface75d00:us-central1:mahi',  # Full path to the socket
-#         'PORT': '3306',       # Cloud SQL Auth Proxy listens on port 3306
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dbname',
+        'USER': 'username',
+        'PASSWORD': 'password',
+        'HOST': 'ipadress',
+        'PORT': '3306'
+    }
+}
 
 
 
